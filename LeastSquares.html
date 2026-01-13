@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Least Squares Calculator</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="LeastSquares.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1>Least Squares Calculator</h1>
+            <div class="subtitle">Real-time automatic calculation with 3D visualization</div>
+            
+            <div class="info">
+                💡 <strong>Auto-Calculating Mode:</strong> Results update instantly as you add or modify data points. The best-fit line is calculated automatically!
+            </div>
+
+            <div class="format-toggle">
+                <span style="font-weight: bold; color: #F08051;">Display Format:</span>
+                <label>
+                    <input type="radio" name="format" value="decimal" checked onchange="changeFormat('decimal')">
+                    Decimal
+                </label>
+                <label>
+                    <input type="radio" name="format" value="fraction" onchange="changeFormat('fraction')">
+                    Fraction
+                </label>
+            </div>
+
+            <div class="learn-more">
+                <div class="learn-more-header" onclick="toggleLearnMore()">
+                    <span>📖 Instructions & How to Use</span>
+                    <span class="learn-more-arrow" id="learnMoreArrow">▼</span>
+                </div>
+                <div class="learn-more-content" id="learnMoreContent">
+                    <h3>🚀 Getting Started</h3>
+                    <p>This calculator automatically computes the least squares regression line for your data points in real-time!</p>
+
+                    <h3>➕ Adding Data Points</h3>
+                    <ul>
+                        <li>Click the <strong>"Add Data Point"</strong> button to add a new row</li>
+                        <li>Enter X and Y values in the input fields</li>
+                        <li>Results calculate automatically as you type!</li>
+                        <li>Click the <strong>×</strong> button to remove any point</li>
+                    </ul>
+
+                    <h3>📊 Understanding the Results</h3>
+                    <p>Once you have at least 2 data points, you'll see:</p>
+                    <ul>
+                        <li><strong>Equation:</strong> The best-fit line in the form y = mx + c</li>
+                        <li><strong>Slope (m):</strong> How steep the line is</li>
+                        <li><strong>Y-intercept (c):</strong> Where the line crosses the Y axis</li>
+                        <li><strong>R² value:</strong> How well the line fits (1.0 = perfect fit)</li>
+                        <li><strong>Sum of squared errors:</strong> Total error measurement</li>
+                    </ul>
+
+                    <h3>🔢 Display Format</h3>
+                    <ul>
+                        <li><strong>Decimal:</strong> Shows results as decimal numbers (e.g., 1.9900)</li>
+                        <li><strong>Fraction:</strong> Shows results as fractions (e.g., 1 99/100)</li>
+                    </ul>
+
+                    <h3>🎯 Making Predictions</h3>
+                    <ul>
+                        <li>After calculating the line, a prediction box appears</li>
+                        <li>Enter any X value to predict its corresponding Y value</li>
+                        <li>Click <strong>"Predict"</strong> to see the result</li>
+                    </ul>
+
+                    <h3>🖱️ 3D Visualization Controls</h3>
+                    <ul>
+                        <li><strong>Rotate:</strong> Click and drag on the 3D canvas</li>
+                        <li><strong>Zoom:</strong> Use your mouse wheel to zoom in/out</li>
+                        <li>Orange spheres represent your data points</li>
+                        <li>Yellow line shows the best-fit regression line</li>
+                    </ul>
+
+                    <h3>🔄 Other Features</h3>
+                    <ul>
+                        <li><strong>Load Example Data:</strong> Try the calculator with sample data</li>
+                        <li><strong>Clear All:</strong> Remove all points and start fresh</li>
+                        <li><strong>Auto-Calculating Mode:</strong> Always enabled - no manual calculation needed!</li>
+                         <li><strong>Step-by-Step Solution:</strong> Solutions are automatically generated and displayed with detailed matrix computations </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="learn-more">
+                <div class="learn-more-header" onclick="toggleAbout()">
+                    <span>👥 About & Credits</span>
+                    <span class="learn-more-arrow" id="aboutArrow">▼</span>
+                </div>
+                <div class="learn-more-content" id="aboutContent">
+                    <h3>👨‍💻 Development Team</h3>
+                       <div class="highlight-box">
+                        <strong>Group 8 Members:</strong><br>
+                        Bague, Mark Lester, N.<br>
+                        Bulala, Kenneth Andrei, G.<br>
+                        Cruz, Joriz Ben, K.<br>
+                        Gatmen, Alliah, M.<br>
+                        Lucero, Dariel Luis, D.<br>
+                        Zacarias, Diana Loreanne, M.
+                    </div>
+
+                    <h3>🎓 Academic Information</h3>
+                    <ul>
+                        <li><strong>Course:</strong> Linear Algebra and Matrix Theory</li>
+                        <li><strong>Program, Year & Section:</strong> Bachelor of Science in Computer Science, Year 2 - Section 4</li>
+                        <li><strong>Batch Year:</strong> 2025-2026</li>
+                        <li><strong>University:</strong> Polytechnic University of the Philippines - Sta. Mesa</li>
+                        <li><strong>Department:</strong> College of Computer and Information Sciences</li>
+                    </ul>
+
+                    <h3>📅 Project Details</h3>
+                    <ul>
+                        <li><strong>Project:</strong> Automated Least Squares Solutions Finder</li>
+                        <li><strong>Submitted:</strong> January 17, 2026</li>
+                        <li><strong>Instructor:</strong> Prof. Sta. Maria, John Patrick, B.</li>
+                    </ul>
+
+                    <h3>🛠️ Technologies Used</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Three.js for 3D visualization</li>
+                        <li>Real-time computation algorithms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>📍 Data Points <span class="auto-badge">AUTO</span></h2>
+            <div class="data-table">
+                <div class="label-row">
+                    <div>X value</div>
+                    <div>Y value</div>
+                    <div></div>
+                </div>
+                <div id="dataPoints">
+                    <!-- Data points will be added here -->
+                </div>
+            </div>
+
+            <button class="tertiary" onclick="addPoint()">Add Data Point</button>
+            <button class="secondary" onclick="loadExample()">Load Example Data</button>
+            <button onclick="clearAll()">Clear All</button>
+
+            <div id="results"></div>
+
+            <div id="solutionSteps" style="display: none;">
+                <h2>📝 Detailed Solution Steps</h2>
+                <div class="solution-container">
+                    <div class="solution-toggle" onclick="toggleSolution()">
+                        <span>👁️ Click to view step-by-step solution</span>
+                        <span class="solution-arrow" id="solutionArrow">▼</span>
+                    </div>
+                    <div class="solution-content" id="solutionContent">
+                        <!-- Solution steps will be inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="predictionSection" style="display: none;">
+                <h2>🎯 Make Predictions</h2>
+                <div class="prediction-box">
+                    <div>Enter an X value to predict Y:</div>
+                    <div class="predict-input">
+                        <input type="number" step="any" id="predictX" placeholder="Enter X value">
+                        <button onclick="makePrediction()">Predict</button>
+                    </div>
+                    <div id="predictionResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="canvas-container">
+            <div class="controls">
+                🖱️ <strong>Rotate:</strong> Click and drag<br>
+                🔍 <strong>Zoom:</strong> Mouse wheel<br>
+                ⚡ <strong>Auto-updating:</strong> Enabled
+            </div>
+            <canvas id="threejs-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="LeastSquares.js"></script>
+</body>
+</html>
