@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+    grid-template-columns: 950px 1fr;
+    height: 100vh;
+    gap: 24px;
+    padding: 24px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.panel {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(240, 128, 81, 0.1);
+    border: 1px solid #FFE4CC;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.panel::-webkit-scrollbar-track {
+    background: #FFF5E6;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.panel::-webkit-scrollbar-thumb {
+    background: #F0B451;
+    border-radius: 4px;
+}
+
+.panel::-webkit-scrollbar-thumb:hover {
+    background: #F09C51;
+}
+
+#canvas-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #FFFAF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFE4CC;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+#threejs-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+    border: 1px solid #FFE4CC;
+    backdrop-filter: blur(10px);
+}
