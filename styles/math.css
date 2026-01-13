@@ -1,0 +1,125 @@
+.formula-box {
+    background: #F08051;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    margin: 10px 0;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.calculation-box {
+    background: #FFF5EB;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    margin: 8px 0;
+    border-left: 3px solid #F08051;
+    color: #333;
+}
+
+.data-table-solution {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.data-table-solution th {
+    background: #F0B451;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.data-table-solution td {
+    background: white;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #FFE4CC;
+}
+
+.data-table-solution tr:nth-child(even) td {
+    background: #FFFAF5;
+}
+
+.matrix-display {
+    display: inline-flex;
+    align-items: center;
+    margin: 12px 0;
+    padding: 8px;
+    background: white;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.matrix-bracket {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: bold;
+    color: #F08051;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+.matrix-bracket.left::before {
+    content: '[';
+}
+
+.matrix-bracket.right::before {
+    content: ']';
+}
+
+.matrix-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 12px;
+}
+
+.matrix-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.matrix-cell {
+    min-width: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.fraction {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.fraction sup {
+    font-size: 0.8em;
+    line-height: 1;
+    margin-bottom: 1px;
+}
+
+.fraction .frac-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    margin: 1px 0;
+}
+
+.fraction sub {
+    font-size: 0.8em;
+    line-height: 1;
+    margin-top: 1px;
+}
