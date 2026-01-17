@@ -1,7 +1,7 @@
 button {
     width: 100%;
     padding: 12px;
-    background: #F08051;
+    background: #D97638;
     border: none;
     border-radius: 8px;
     color: white;
@@ -13,7 +13,7 @@ button {
 }
 
 button:hover {
-    background: #E06040;
+    background: #C76828;
 }
 
 button:active {
@@ -21,26 +21,26 @@ button:active {
 }
 
 button.secondary {
-    background: #FFE4CC;
-    color: #F08051;
+    background: #E8D5C4;
+    color: #D97638;
 }
 
 button.secondary:hover {
-    background: #FFD4B3;
+    background: #D9C6B5;
 }
 
 button.tertiary {
-    background: #FFFAF5;
-    color: #F08051;
-    border: 1px solid #FFE4CC;
+    background: #FFF8F0;
+    color: #D97638;
+    border: 1px solid #E8D5C4;
 }
 
 button.tertiary:hover {
-    background: #FFF5EB;
+    background: #FFEFD9;
 }
 
 .remove-btn {
-    background: #F08051;
+    background: #D97638;
     border: none;
     border-radius: 6px;
     color: white;
@@ -54,10 +54,9 @@ button.tertiary:hover {
 }
 
 .remove-btn:hover {
-    background: #E06040;
+    background: #C76828;
 }
 
-/* Forms */
 .data-row {
     display: grid;
     grid-template-columns: 1fr 1fr 40px;
@@ -68,10 +67,10 @@ button.tertiary:hover {
 
 .data-row input {
     padding: 10px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #D9C6B5;
     border-radius: 6px;
-    background: white;
-    color: #333;
+    background: #FFF8F0;
+    color: #4A3F35;
     font-size: 14px;
     text-align: center;
     transition: all 0.2s;
@@ -79,8 +78,8 @@ button.tertiary:hover {
 
 .data-row input:focus {
     outline: none;
-    border-color: #F08051;
-    box-shadow: 0 0 0 3px rgba(240, 128, 81, 0.1);
+    border-color: #D97638;
+    box-shadow: 0 0 0 3px rgba(217, 118, 56, 0.15);
 }
 
 .label-row {
@@ -90,16 +89,16 @@ button.tertiary:hover {
     margin-bottom: 8px;
     font-size: 12px;
     font-weight: 600;
-    color: #666;
+    color: #8B7355;
 }
 
-/* Data Table */
+.0
 .data-table {
-    background: #FFFAF5;
+    background: #FFF8F0;
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     max-height: 300px;
     overflow-y: auto;
 }
@@ -109,24 +108,24 @@ button.tertiary:hover {
 }
 
 .data-table::-webkit-scrollbar-track {
-    background: #FFF5E6;
+    background: #F5E6D3;
     border-radius: 4px;
 }
 
 .data-table::-webkit-scrollbar-thumb {
-    background: #F0B451;
+    background: #C9A882;
     border-radius: 4px;
 }
 
 /* Results */
 .result-box {
-    background: #FFFAF5;
+    background: #FFF8F0;
     padding: 16px;
     border-radius: 8px;
     margin-top: 16px;
     font-size: 14px;
     line-height: 1.6;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     animation: slideIn 0.3s ease;
 }
 
@@ -134,12 +133,12 @@ button.tertiary:hover {
     display: block;
     margin-bottom: 12px;
     font-size: 16px;
-    color: #F08051;
+    color: #D97638;
     font-weight: 600;
 }
 
 .equation {
-    background: #F08051;
+    background: #D97638;
     padding: 16px;
     border-radius: 8px;
     margin: 12px 0;
@@ -151,31 +150,31 @@ button.tertiary:hover {
 }
 
 .error {
-    color: #E06040;
-    background: #FFF0EB;
+    color: #C74020;
+    background: #FFE8E0;
     padding: 12px;
     border-radius: 8px;
     margin-top: 12px;
     font-size: 14px;
-    border: 1px solid #FFD4CC;
+    border: 1px solid #FFD4C4;
 }
 
 .info {
-    background: #FFFAF5;
+    background: #FFF8F0;
     padding: 12px;
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 16px;
     line-height: 1.6;
-    border: 1px solid #FFE4CC;
-    color: #666;
+    border: 1px solid #E8D5C4;
+    color: #6B5A48;
 }
 
 /* Stats */
 .stats {
     margin-top: 12px;
     padding-top: 12px;
-    border-top: 1px solid #FFE4CC;
+    border-top: 1px solid #E8D5C4;
 }
 
 .stat-item {
@@ -183,17 +182,17 @@ button.tertiary:hover {
     justify-content: space-between;
     margin-bottom: 8px;
     font-size: 14px;
-    color: #666;
+    color: #6B5A48;
 }
 
 .stat-item span:last-child {
     font-weight: 600;
-    color: #333;
+    color: #4A3F35;
 }
 
 .auto-badge {
     display: inline-block;
-    background: #F08051;
+    background: #D97638;
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 11px;
@@ -208,9 +207,9 @@ button.tertiary:hover {
     gap: 12px;
     align-items: center;
     padding: 12px;
-    background: #FFFAF5;
+    background: #FFF8F0;
     border-radius: 8px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     font-size: 14px;
     margin-bottom: 16px;
 }
@@ -220,24 +219,24 @@ button.tertiary:hover {
     align-items: center;
     gap: 6px;
     cursor: pointer;
-    color: #666;
+    color: #6B5A48;
     font-weight: 500;
 }
 
 .format-toggle input[type="radio"] {
     cursor: pointer;
-    accent-color: #F08051;
+    accent-color: #D97638;
     width: 18px;
     height: 18px;
 }
 
 /* Prediction */
 .prediction-box {
-    background: #FFFAF5;
+    background: #FFF8F0;
     padding: 16px;
     border-radius: 8px;
     margin-top: 12px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     font-size: 14px;
 }
 
@@ -250,17 +249,17 @@ button.tertiary:hover {
 .predict-input input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #D9C6B5;
     border-radius: 6px;
     background: white;
-    color: #333;
+    color: #4A3F35;
     font-size: 14px;
 }
 
 .predict-input input:focus {
     outline: none;
-    border-color: #F08051;
-    box-shadow: 0 0 0 3px rgba(240, 128, 81, 0.1);
+    border-color: #D97638;
+    box-shadow: 0 0 0 3px rgba(217, 118, 56, 0.15);
 }
 
 .predict-input button {
@@ -272,22 +271,22 @@ button.tertiary:hover {
 }
 
 .math-formula {
-    background: #FFF5EB;
+    background: #FFEFD9;
     padding: 10px 14px;
     border-radius: 6px;
     font-family: 'Courier New', monospace;
     font-size: 14px;
     margin: 10px 0;
-    border-left: 3px solid #F08051;
-    color: #333;
+    border-left: 3px solid #D97638;
+    color: #4A3F35;
 }
 
 .highlight-box {
-    background: #FFF5EB;
+    background: #FFEFD9;
     padding: 12px;
     border-radius: 6px;
-    border-left: 3px solid #F08051;
+    border-left: 3px solid #D97638;
     margin: 12px 0;
     font-size: 14px;
-    color: #666;
+    color: #6B5A48;
 }
