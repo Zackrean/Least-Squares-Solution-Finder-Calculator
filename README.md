@@ -44,6 +44,7 @@ to determine the best-fit linear model for a given set of data points. All matri
 ## 🚀 Live Demo
 
 The project is deployed and accessible online:
+   
     👉 https://least-squares-calculator.vercel.app/
 
 ## 📦 Project Structure
