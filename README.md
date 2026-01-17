@@ -41,11 +41,10 @@ to determine the best-fit linear model for a given set of data points. All matri
 - Coefficient of determination (R²)
 - Sum of squared errors (SSE)
 
-## 🚀 How to Run
+## 🚀 Live Demo
 
-### Option 1: Direct Browser Access (Simplest)
-1. Clone or download this repository
-2. Open `index.html` in a modern web browser (Chrome, Firefox, Edge, Safari)
+The project is deployed and accessible online:
+    👉 https://least-squares-calculator.vercel.app/
 
 ## 📦 Project Structure
 
