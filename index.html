@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Least Squares Calculator</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-    <link rel="stylesheet" href="LeastSquares.css">
+    <!-- FIXED: Changed favicon to use your logo -->
+    <link rel="icon" href="G.png">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/expandable.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/math.css">
 </head>
 <body>
-     <header>
-        <img src = "logic/G.png" alt="G">
-    </header>
     <div class="container">
         <div class="panel">
-            <h1>Least Squares Calculator</h1>
-            <div class="subtitle">Real-time automatic calculation with 3D visualization</div>
+            <!-- FIXED: Added logo beside title -->
+            <div class="header-with-logo">
+                <img src="G.png" alt="Logo" class="header-logo">
+                <div>
+                    <h1>Least Squares Calculator</h1>
+                    <div class="subtitle">Real-time automatic calculation with 3D visualization</div>
+                </div>
+            </div>
             
             <div class="info">
                 💡 <strong>Auto-Calculating Mode:</strong> Results update instantly as you add or modify data points. The best-fit line is calculated automatically!
             </div>
 
             <div class="format-toggle">
-                <span style="font-weight: bold; color: #F08051;">Display Format:</span>
+                <span style="font-weight: bold; color: #D97638;">Display Format:</span>
                 <label>
                     <input type="radio" name="format" value="decimal" checked onchange="changeFormat('decimal')">
                     Decimal
@@ -140,7 +148,6 @@
                     <div></div>
                 </div>
                 <div id="dataPoints">
-                    <!-- Data points will be added here -->
                 </div>
             </div>
 
@@ -158,7 +165,6 @@
                         <span class="solution-arrow" id="solutionArrow">▼</span>
                     </div>
                     <div class="solution-content" id="solutionContent">
-                        <!-- Solution steps will be inserted here -->
                     </div>
                 </div>
             </div>
@@ -187,8 +193,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="LeastSquares.js"></script>
+    <script src="./logic/calculation.js"></script>
+    <script src="./logic/utils.js"></script>
+    <script src="./logic/main.js"></script>
+    <script src="./logic/visualization.js"></script>
 </body>
 
 </html>
-
