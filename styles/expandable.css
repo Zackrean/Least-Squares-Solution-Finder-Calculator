@@ -3,7 +3,7 @@
 }
 
 .learn-more-header {
-    background: #F08051;
+    background: #D97638;
     padding: 14px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -17,7 +17,7 @@
 }
 
 .learn-more-header:hover {
-    background: #E06040;
+    background: #C76828;
 }
 
 .learn-more-arrow {
@@ -34,9 +34,9 @@
     overflow: hidden;
     transition: all 0.3s ease;
     opacity: 0;
-    background: #FFFAF5;
+    background: #FFF8F0;
     border-radius: 0 0 8px 8px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     border-top: none;
 }
 
@@ -53,17 +53,17 @@
 }
 
 .learn-more-content.open::-webkit-scrollbar-track {
-    background: #FFF5E6;
+    background: #F5E6D3;
     border-radius: 4px;
 }
 
 .learn-more-content.open::-webkit-scrollbar-thumb {
-    background: #F0B451;
+    background: #C9A882;
     border-radius: 4px;
 }
 
 .learn-more-content h3 {
-    color: #F08051;
+    color: #D97638;
     font-size: 15px;
     margin-top: 16px;
     margin-bottom: 8px;
@@ -77,7 +77,7 @@
 .learn-more-content p {
     font-size: 14px;
     line-height: 1.6;
-    color: #666;
+    color: #6B5A48;
     margin-bottom: 12px;
 }
 
@@ -89,7 +89,7 @@
 .learn-more-content li {
     font-size: 14px;
     line-height: 1.7;
-    color: #666;
+    color: #6B5A48;
     margin-bottom: 6px;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .solution-toggle {
-    background: #F08051;
+    background: #D97638;
     padding: 14px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -113,7 +113,7 @@
 }
 
 .solution-toggle:hover {
-    background: #E06040;
+    background: #C76828;
 }
 
 .solution-arrow {
@@ -130,9 +130,9 @@
     overflow: hidden;
     transition: all 0.3s ease;
     opacity: 0;
-    background: #FFFAF5;
+    background: #FFF8F0;
     border-radius: 0 0 8px 8px;
-    border: 1px solid #FFE4CC;
+    border: 1px solid #E8D5C4;
     border-top: none;
 }
 
@@ -149,12 +149,12 @@
 }
 
 .solution-content.open::-webkit-scrollbar-track {
-    background: #FFF5E6;
+    background: #F5E6D3;
     border-radius: 4px;
 }
 
 .solution-content.open::-webkit-scrollbar-thumb {
-    background: #F0B451;
+    background: #C9A882;
     border-radius: 4px;
 }
 
@@ -163,11 +163,11 @@
     padding: 16px;
     background: white;
     border-radius: 8px;
-    border-left: 3px solid #F08051;
+    border-left: 3px solid #D97638;
 }
 
 .solution-step h4 {
-    color: #F08051;
+    color: #D97638;
     font-size: 15px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -176,6 +176,6 @@
 .solution-step p {
     font-size: 14px;
     line-height: 1.6;
-    color: #666;
+    color: #6B5A48;
     margin-bottom: 8px;
 }
