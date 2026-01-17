@@ -117,7 +117,6 @@ button.tertiary:hover {
     border-radius: 4px;
 }
 
-/* Results */
 .result-box {
     background: #FFF8F0;
     padding: 16px;
@@ -201,7 +200,6 @@ button.tertiary:hover {
     color: white;
 }
 
-/* Format Toggle */
 .format-toggle {
     display: flex;
     gap: 12px;
@@ -230,7 +228,6 @@ button.tertiary:hover {
     height: 18px;
 }
 
-/* Prediction */
 .prediction-box {
     background: #FFF8F0;
     padding: 16px;
@@ -290,3 +287,4 @@ button.tertiary:hover {
     font-size: 14px;
     color: #6B5A48;
 }
+
